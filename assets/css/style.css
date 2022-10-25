@@ -32,7 +32,12 @@ button {
   color: white;
 }
 
+ul {
+  border: 2px solid black;
+}
 .menu ul {
   display: flex;
   margin-top: 30px;
+  align-items: center;
+  gap: 15px 35px;
 }
