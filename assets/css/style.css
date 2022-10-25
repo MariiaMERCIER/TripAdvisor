@@ -2,24 +2,28 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 /* Header*/
 
 header {
-  height: 60px;
   background-color: white;
+  height: 60px;
 }
 
 .flex-parent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .conteiner {
   max-width: 1136px;
   margin: 0 auto;
 }
 .conteiner img {
-  width: 188px;
-  height: auto;
+  margin-top: 15px;
+  width: auto;
+  height: 40px;
 }
 
 button {
@@ -32,12 +36,67 @@ button {
   color: white;
 }
 
-ul {
-  border: 2px solid black;
-}
 .menu ul {
   display: flex;
-  margin-top: 30px;
+  margin-top: 15px;
   align-items: center;
-  gap: 15px 35px;
+  gap: 15px;
+}
+
+.menu ul li {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.presentation {
+  padding: 32px 0 0 0;
+}
+h1 {
+  color: #000;
+  font-size: 54px;
+  font-weight: 900;
+}
+h1 span {
+  color: #ff5d5d;
+}
+.presentation p {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.presentation p a:visited {
+  color: #333;
+}
+.flex-parent-proposition ul {
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-parent-proposition button {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+.first-button {
+  margin-left: none;
+}
+
+button {
+  max-width: 181px;
+  max-height: 68px;
+  border-radius: 10px;
+  padding: 11px 16px;
+  background-color: white;
+  border: 2px solid #000;
+  color: #000;
+
+  margin: 15px 0 0 10px;
+}
+
+button:nth-child(1) {
+  margin: 15px 0 0 0;
 }
