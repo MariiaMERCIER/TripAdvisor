@@ -103,25 +103,80 @@ button:nth-child(1) {
 }
 
 .images {
-  max-width: 1136px;
+  height: 372px;
+  width: 1136px;
+  align-self: center;
+  object-fit: cover;
   display: flex;
+  gap: 2px;
 }
 
 .images .left {
-  max-height: 372px;
   flex: 4;
-  border: 2px solid red;
 }
-
+.images .left img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .images .right {
-  flex: 3;
+  flex: 2;
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
 .images .right .img1 {
-  flex: 1;
+  object-fit: cover;
+  height: 50%;
 }
 .images .right .img2 {
-  flex: 1;
+  object-fit: cover;
+  height: 50%;
+}
+
+.baseline {
+  padding-bottom: 16px;
+}
+
+.baseline p {
+  padding: 20px 0;
+  font-size: 12px;
+  color: #333;
+}
+
+.description {
+  max-width: 560px;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 24px;
+  margin: 0 0 16px;
+}
+
+.description p {
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 23px;
+  font-size: 20px;
+  color: #333;
+}
+.fa-circle {
+  color: #5dffb3;
+}
+
+.colon1 {
+  margin-top: 54px;
+}
+
+.carrousel {
+  display: flex;
 }
