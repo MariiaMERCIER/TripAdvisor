@@ -20,13 +20,12 @@ header {
   max-width: 1136px;
   margin: 0 auto;
 }
-.conteiner img {
+header .conteiner img {
   margin-top: 15px;
   width: auto;
   height: 40px;
 }
-
-button {
+.connection {
   max-width: 156px;
   max-height: 42px;
   padding: 10px 16px;
@@ -69,9 +68,10 @@ h1 span {
 .presentation p a:visited {
   color: #333;
 }
+
 .flex-parent-proposition ul {
+  padding-bottom: 24px;
   display: flex;
-  align-items: stretch;
 }
 
 .flex-parent-proposition button {
@@ -79,13 +79,14 @@ h1 span {
   justify-content: space-between;
   flex: 1;
   align-items: center;
+  cursor: pointer;
 }
 
 .first-button {
   margin-left: none;
 }
 
-button {
+main button {
   max-width: 181px;
   max-height: 68px;
   border-radius: 10px;
@@ -99,4 +100,28 @@ button {
 
 button:nth-child(1) {
   margin: 15px 0 0 0;
+}
+.images {
+  max-height: 372px;
+  display: flex;
+  max-height: 372px;
+}
+
+.images .left {
+  flex: 4;
+  border: 2px solid red;
+}
+
+.images .right {
+  max-height: 372px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.images .right .img1 {
+  flex: 1;
+}
+.images .right .img2 {
+  flex: 1;
 }
