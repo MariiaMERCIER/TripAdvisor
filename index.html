@@ -49,7 +49,9 @@
           <p>
             Les revenus influencent le choix des expériences présentées sur
             cette page :
-            <a href="https://www.tripadvisor.fr/pages/service_fr.html"
+            <a
+              class="document"
+              href="https://www.tripadvisor.fr/pages/service_fr.html"
               >en savoir plus.</a
             >
           </p>
@@ -59,12 +61,15 @@
             <button class="first-button">
               Hotêls<i class="fa-solid fa-bed"></i>
             </button>
-            <button>Locations de vacances</button>
-            <button>Activités</button>
-            <button>Réstaurants</button>
-            <button>Forums de voyage</button>
-            <button>Croisières</button>
-            <button>Plus</button>
+            <button>
+              Locations de vacances<i class="fa-solid fa-house"></i>
+            </button>
+            <button>Activités<i class="fa-solid fa-ticket"></i></button>
+            <button>Réstaurants<i class="fa-solid fa-utensils"></i></button>
+            <button>
+              Forums de voyage<i class="fa-brands fa-rocketchat"></i>
+            </button>
+            <button>Plus<i class="fa-solid fa-ellipsis"></i></button>
           </ul>
         </div>
         <div class="images">
@@ -89,39 +94,41 @@
         </div>
         <div class="baseline">
           <p>
-            <span
-              >Europe
+            <span>
               <a
                 href="https://www.tripadvisor.fr/Tourism-g4-Europe-Vacations.html"
-              ></a
-            ></span>
+                >Europe</a
+              ></span
+            >
             >
             <span
-              >Italie<a
+              ><a
                 href="https://www.tripadvisor.fr/Tourism-g187768-Italy-Vacations.html"
-              ></a
-            ></span>
+                >Italie</a
+              ></span
+            >
             >
             <span
-              >Toscane<a
+              ><a
                 href="https://www.tripadvisor.fr/Tourism-g187893-Tuscany-Vacations.html"
-              ></a
-            ></span>
+                >Toscane</a
+              ></span
+            >
             >
             <span
-              >Province de Florence<a
+              ><a
                 href="https://www.tripadvisor.fr/Tourism-g2043770-Province_of_Florence_Tuscany-Vacations.html"
-              ></a
-            ></span>
+                >Province de Florence</a
+              ></span
             >
-            <span
-              >Florence
+            >
+            <span>
               <a
                 href="https://www.tripadvisor.fr/Tourism-g187895-Florence_Tuscany-Vacations.html"
-              ></a
+                >Florence </a
               ><i class="fa-solid fa-caret-down"></i>
             </span>
-            <span class="gauche">Visiter : Florence</span>
+            <span class="visiter"> Visiter : Florence </span>
           </p>
         </div>
         <div class="description">
@@ -143,36 +150,75 @@
             spécialités toscanes.
           </p>
         </div>
-        <section classe="carrousel">
-          <div class="colon1">
-            <h2>Florence : les immanquables</h2>
-            <h3>Se divertir</h3>
-            <p>
-              Des lieux à voir, des rues à explorer et des expériences
-              emblématiques à Florence.
-            </p>
-            <p>
-              Tout afficher
-              <a
-                href="https://www.tripadvisor.fr/Attractions-g187895-Activities-Florence_Tuscany.html"
-              ></a>
-            </p>
-          </div>
-          <div class="colon2">
-            <div classe="img1"></div>
-            <img
-              src="./assets/image/ponte-vecchio-arno-florence-italie-06.jpg"
-              alt="pont florence"
-            />
-            <p>Ponte Vicchio</p>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
+        <section>
+          <h2>Florence : les immanquables</h2>
+          <div class="carrousel">
+            <div class="colon1">
+              <h3>Se divertir</h3>
+
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Florence.
+              </p>
+              <span class="button">
+                <a
+                  href="https://www.tripadvisor.fr/Attractions-g187895-Activities-Florence_Tuscany.html"
+                  >Tout afficher</a
+                >
+              </span>
+            </div>
+            <div class="colon2">
+              <div class="img1">
+                <img
+                  src="./assets/image/ponte-vecchio-arno-florence-italie-06.jpg"
+                  alt="pont florence"
+                />
+                <h4>Ponte Vicchio</h4>
+
+                <i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><span class="vues">20 906</span>
+                <p class="classement">Ponts</p>
+              </div>
+
+              <div class="img2">
+                <img
+                  src="./assets/image/tours-and-trips-of-tuscanycycl.jpg"
+                  alt="Tuscany cycle"
+                />
+                <h4>Tuscany cycle</h4>
+
+                <i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><span class="vues">1700</span>
+                <p class="classement">Circuits gastronomiques, Oenotourisme</p>
+              </div>
+              <div class="img3">
+                <img src="./assets/image/photo0jpg.jpg" alt="My sugar" />
+                <h4>My sugar</h4>
+
+                <i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i><span class="vues">285</span>
+                <p class="classement">
+                  € • Desserts, Italienne, Végétariens bienvenus
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </section>
     </main>
+    <footer>
+      <p>fait par Mariia MERCIER</p>
+    </footer>
   </body>
 </html>
