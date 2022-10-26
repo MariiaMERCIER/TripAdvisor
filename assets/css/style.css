@@ -101,19 +101,19 @@ main button {
 button:nth-child(1) {
   margin: 15px 0 0 0;
 }
+
 .images {
-  max-height: 372px;
+  max-width: 1136px;
   display: flex;
-  max-height: 372px;
 }
 
 .images .left {
+  max-height: 372px;
   flex: 4;
   border: 2px solid red;
 }
 
 .images .right {
-  max-height: 372px;
   flex: 3;
   display: flex;
   flex-direction: column;
