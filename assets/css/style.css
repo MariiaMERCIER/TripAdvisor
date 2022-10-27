@@ -133,14 +133,13 @@ button:nth-child(1) {
 }
 
 .images {
-  border: 2px solid red;
   height: 372px;
   width: 1136px;
   align-self: center;
   object-fit: cover;
   display: flex;
   gap: 2px;
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
 }
 
 .images .left {
@@ -150,6 +149,18 @@ button:nth-child(1) {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  position: relative;
+}
+.plusimages {
+  position: fixed;
+  color: white;
+  background-color: #000;
+  border-radius: 27px;
+  max-width: 156px;
+  max-height: 42px;
+  padding: 10px 16px;
+  font-size: 12px;
+  cursor: pointer;
 }
 .images .right {
   flex: 2;
@@ -160,22 +171,27 @@ button:nth-child(1) {
 
 .images .right .img1 {
   object-fit: cover;
-  height: 50%;
+  height: calc(50% - 1px);
 }
 .images .right .img2 {
   object-fit: cover;
-  height: 50%;
+  height: calc(50% - 1px);
 }
 
 .baseline {
-  padding-bottom: 16px;
-}
+  display: flex;
 
-.baseline p {
+  padding-bottom: 16px;
   font-size: 12px;
   color: #333;
+  text-align: left;
 }
-.baseline p span {
+
+.destination {
+  flex: 11;
+}
+.visit {
+  flex: 1;
   text-align: left;
 }
 
@@ -254,9 +270,10 @@ h3 {
   gap: 10px;
 }
 
-.colon2 ::-webkit-scrollbar {
+.colon2::-webkit-scrollbar {
   display: none;
 }
+
 .haut {
   cursor: pointer;
 }
@@ -331,6 +348,29 @@ h4:hover {
 
 footer {
   text-align: center;
+  background-color: #faf1ec;
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.littleLogo {
+  width: 24px;
+  height: auto;
+  margin: 3px;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1136px) {
+  .conteiner {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background: yellow;
+  }
 }
