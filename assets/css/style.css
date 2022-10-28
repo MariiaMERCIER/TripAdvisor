@@ -36,7 +36,7 @@ header .conteiner img {
 
 .connection:hover {
   background-color: rgb(0, 0, 0);
-  opacity: 80%;
+  opacity: 70%;
   color: white;
 }
 .menu ul {
@@ -60,11 +60,9 @@ header .conteiner img {
   border-radius: 27px;
   padding: 10px 16px;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
-.presentation {
-  padding: 32px 0 0 0;
-}
 h1 {
   color: #000;
   font-size: 54px;
@@ -100,29 +98,26 @@ a:visited {
   justify-content: space-between;
   flex: 1;
   align-items: flex-start;
-
   cursor: pointer;
-}
-
-.first-button {
-  margin-left: none;
-}
-
-main button {
   text-align: left;
-  max-width: 181px;
+  width: 181px;
   height: 68px;
   border-radius: 10px;
   padding: 11px 16px;
   background-color: white;
   border: 2px solid #000;
   color: #000;
-
   margin: 15px 0 0 10px;
   transition: all 0.3s ease-in-out;
 }
+.hidden {
+  display: none;
+}
+.first-button {
+  margin-left: none;
+}
 
-main button:hover {
+.flex-parent-proposition button:hover {
   background-color: #000;
   border: 2px solid #000;
   color: white;
@@ -133,8 +128,8 @@ button:nth-child(1) {
 }
 
 .images {
-  height: 372px;
-  width: 1136px;
+  max-height: 372px;
+  max-width: 1136px;
   align-self: center;
   object-fit: cover;
   display: flex;
@@ -143,16 +138,18 @@ button:nth-child(1) {
 }
 
 .images .left {
-  flex: 4;
+  flex: 1;
+  position: relative;
 }
 .images .left img {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 .plusimages {
-  position: fixed;
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
   color: white;
   background-color: #000;
   border-radius: 27px;
@@ -162,8 +159,14 @@ button:nth-child(1) {
   font-size: 12px;
   cursor: pointer;
 }
+
+.plusimages:hover {
+  background-color: rgb(0, 0, 0);
+  opacity: 70%;
+  color: white;
+}
 .images .right {
-  flex: 2;
+  width: 372px;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -180,7 +183,6 @@ button:nth-child(1) {
 
 .baseline {
   display: flex;
-
   padding-bottom: 16px;
   font-size: 12px;
   color: #333;
@@ -218,11 +220,17 @@ h2 {
   line-height: 23px;
   font-size: 20px;
   color: #333;
-  margin-bottom: 54px;
+  margin-bottom: 60px;
 }
 
-.carrousel {
+.first-carrousel {
   padding-top: 10px;
+
+  display: flex;
+  gap: 20px;
+}
+.carrousel {
+  padding-top: 45px;
 
   display: flex;
   gap: 20px;
@@ -279,7 +287,7 @@ h3 {
 }
 .bas {
   margin-top: 8px;
-
+  margin-bottom: 35px;
   cursor: pointer;
 }
 .colon2 img {
@@ -368,9 +376,50 @@ footer {
 
 @media (max-width: 1136px) {
   .conteiner {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    background: yellow;
+    padding: 25px;
+  }
+
+  .hidden {
+    display: block;
+  }
+  .flex-parent-proposition ul {
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .flex-parent-proposition button {
+    flex: 25%;
   }
 }
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 24px;
+    font-weight: 600px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .images .right {
+    width: calc(100% / 4);
+  }
+
+  .colon1 p {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .colon2 {
+    display: flex;
+  }
+  .colon2 img {
+    width: 230px;
+    height: 170px;
+  }
+
+  @media (max-width: 1024px) {
+  }
+} ;
